@@ -1,0 +1,736 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js"></script>
+
+    <title>ABC Manufacturing</title>
+</head>
+
+<body>
+
+    <!-- Header Section-->
+
+    <div class="container-fluid topbar-styling ml-0 pr-5">
+        <div class="row">
+            <div class="col-2">
+                <img class="comp-logo" src="img/logo.png" alt="Company Logo Image">
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-center text-center mx-auto">
+                <span class="header-top">ABC Manufacturing</span>
+            </div>
+            <div class="col-3 d-flex justify-content-end pl-5 pt-2">
+                <div class="d-flex flex-column mr-3">
+                    <span style="font-size:14px">Rebecca Smith</span>
+                    <span style="font-size:12px" class="ml-auto mb-3">Log Out</span>
+                </div>
+                <div class="dropdown">
+                    <i class="fa fa-caret-down" data-toggle="dropdown"></i>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">a</a>
+                        <a class="dropdown-item" href="#">b</a>
+                        <a class="dropdown-item" href="#">c</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar-->
+
+    <div class="bg-color d-flex page">
+        <div class="page-side-nav">
+            <div class="mobile-container">
+                <!-- Top Navigation Menu -->
+                <div class="topnav" id="container-top-nav">
+                    <a id="side-bars-icon" href="javascript:void(0);" class="icon">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div id="myLinks">
+                        <a href="#home" class="active">
+                            <img src="img/navigationIcons/SelectnPay.png" alt="not shown" width="20px"
+                                 height="20px"> <span class="nav-text">&nbsp;Select & Pay</span>
+                        </a>
+                        <a href="#news">
+                            <img src="img/navigationIcons/QuickPayments.png" alt="not shown" width="20px" height="20px">
+                            <span class="nav-text">&nbsp;Quick Payment</span>
+                        </a>
+                        <a href="#contact">
+                            <img src="img/navigationIcons/AutoPayments.png" alt="not shown" width="20px"
+                                 height="20px"> <span class="nav-text">&nbsp;Auto Payments</span>
+                        </a>
+                        <a href="#about">
+                            <img src="img/navigationIcons/Reports.png" alt="not shown" width="20px" height="20px">
+                            <span class="nav-text">&nbsp;Reports</span>
+                        </a>
+                        <a href="#about">
+                            <img src="img/navigationIcons/MyAccount.png" alt="not shown" width="20px" height="20px">
+                            <span class="nav-text">&nbsp;My Account</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Section Starts -->
+
+        <div class="page-content p-5">
+            <div class="mobile-intro">
+                <p class="mb-4 p-text">Welcome back, Rebecca, Here is a summary of your account. here is some text to test</p>
+                <p class="mb-4 p-text">Here is a summary of your account</p>
+            </div>
+            <div class="desktop-intro">
+                <p class="mb-4 p-text">Welcome back, Rebecca, Here is a summary of your account <a href="" data-toggle="modal" data-target="#exampleModal2">New Invoices</a></p>
+            </div>
+            <div class="card-styling">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <div class="card card-style align-items-left">
+                            <img class="card-img-top mt-4" src="img/dashboardCardIcons/AmountDue.png" alt="amount due">
+                            <!--inside of the card well have the card body-->
+                            <div class="card-body">
+                                <h4 class="card-title">$4,120,23</h4>
+                                <p>Total amount due</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModal2Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModal2Label">New Invoices</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <table class="table table-striped table-bordered" id="myTable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col" class="table-invoice">Invoice #</th>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Due Date</th>
+                                                            <th scope="col">Invoice Total</th>
+                                                            <th scope="col">Amount Due</th>
+                                                            <th scope="col">Terms</th>
+                                                            <th scope="col">Description</th>
+                                                            <th scope="col">PO#</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="data-row">
+                                                            <th scope="row">
+                                                                <input type="checkbox" rownum="1" class="checked mr-4" class="mr-4"><a href="#"
+                                                                                                                                       style="font-weight:lighter">234239</a>
+                                                            </th>
+                                                            <td>Date1</td>
+                                                            <td>Due Date1</td>
+                                                            <td class="it">70.00</td>
+                                                            <td class="ad">70.00</td>
+                                                            <td>Discounted if paid by...</td>
+                                                            <td>Lorem</td>
+                                                            <td>239482</td>
+                                                        </tr>
+                                                        <tr class="data-row">
+                                                            <th scope="row">
+                                                                <input type="checkbox" rownum="2" class="checked mr-4"><a href="#"
+                                                                                                                          style="font-weight:lighter">567567</a>
+                                                            </th>
+                                                            <td>Date2</td>
+                                                            <td>Due Date2</td>
+                                                            <td class="it">60.00</td>
+                                                            <td class="ad">60.00</td>
+                                                            <td>Discounted if paid by...</td>
+                                                            <td>Lorem</td>
+                                                            <td>239482</td>
+                                                        </tr>
+                                                        <tr class="data-row">
+                                                            <th scope="row">
+                                                                <input type="checkbox" rownum="3" class="checked mr-4"><a href="#"
+                                                                                                                          style="font-weight:lighter">345454</a>
+                                                            </th>
+                                                            <td>Date3</td>
+                                                            <td>Due Date3</td>
+                                                            <td class="it">50.00</td>
+                                                            <td class="ad">50.00</td>
+                                                            <td>Discounted if paid by...</td>
+                                                            <td>Lorem</td>
+                                                            <td>239482</td>
+                                                        </tr>
+                                                        <tr class="data-row">
+                                                            <th scope="row">
+                                                                <input type="checkbox" rownum="4" class="checked mr-4"><a href="#" style="font-weight:lighter">345454
+                                                            </th>
+                                                            <td>Date4</td>
+                                                            <td>Due Date4</td>
+                                                            <td class="it">90.00</td>
+                                                            <td class="ad">90.00</td>
+                                                            <td>Discounted if paid by...</td>
+                                                            <td>Lorem</td>
+                                                            <td>239482</td>
+                                                        </tr>
+                                                        <tr class="data-row">
+                                                            <th scope="row">
+                                                                <input type="checkbox" rownum="5" class="checked mr-4"><a href="#" style="font-weight:lighter">345454
+                                                            </th>
+                                                            <td>Date5</td>
+                                                            <td>Due Date5</td>
+                                                            <td class="it">10.00</td>
+                                                            <td class="ad">10.00</td>
+                                                            <td>Discounted if paid by...</td>
+                                                            <td>Lorem</td>
+                                                            <td>239482</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <span class="tpa-invoices" id="mpa">Total Payment Amount: $0.00</span> <br>
+                                            </div>
+                                        </div>
+                                        <div class="col ml-4">
+                                            <label for="validationCustom01">Check for other option</label>
+                                            <input type="checkbox" id="form-switch" class="mr-4">
+                                            <form id="btn-pay-with-taxid" style="display:none;" novalidate>
+                                                <div class="form-group row">
+                                                    <div class="col-6 mb-3">
+                                                        <label for="validationCustom01">TaxID</label>
+                                                        <input class="required-input" id="ssn2" type="text" name="ssn" placeholder="123-45-6789" onBlur="is_socialSecurity_Number(str)()">
+
+                                                        <div class="invalid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <form id="btn-pay-with-ssn" novalidate>
+                                            <div class="form-group row">
+                                                <div class="col-6 mb-3">
+                                                    <div id="ssn-error-msg" style="display:none">This SSN is not valid</div>
+                                                    <label for="validationCustom01" class="ml-4">SSN</label>
+                                                    <input class="required-input" id="ssn" type="text" name="ssn" placeholder="123-45-6789" onblur="checkSSN()" value="123-45-6789">
+                                                    <div class="invalid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="col text-center">
+                                        <button type="button" class="btn btn-primary" type="submit">Done</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-style align-items-left">
+                            <img class="card-img-top mt-4" src="img/dashboardCardIcons/Invoices.png" alt="amount due">
+                            <!--inside of the card well have the card body-->
+                            <div class="card-body">
+                                <h4 class="card-title">13</h4>
+                                <p>Open invoices</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-style align-items-left">
+                            <img class="card-img-top mt-4" src="img/dashboardCardIcons/SalesOrders.png" alt="amount due">
+                            <div class="card-body">
+                                <h4 class="card-title">2</h4>
+                                <p>Open sales orders</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-style-payment align-items-left">
+                            <img class="card-img-top mt-4" src="img/dashboardCardIcons/Credits.png" alt="amount due">
+                            <div class="card-body">
+                                <h4 class="card-title">4</h4>
+                                <span>
+                                    Saved payment methods <a href="" data-toggle="modal" data-target="#exampleModal">Manage</a>
+                                </span>
+
+
+                                <!-- Modal -->
+
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">My Saved Payment Methods</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <nav class="navbar navbar-expand-lg">
+                                                                <div class="container-fluid">
+                                                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#navbarNavC" aria-controls="navbarNav" aria-expanded="false"
+                                                                            aria-label="Toggle navigation">
+                                                                        <span class="navbar-toggler-icon"></span>
+                                                                    </button>
+                                                                    <div class="collapse navbar-collapse" id="navbarNav">
+                                                                        <ul class="navbar-nav">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link active" aria-current="page" href="#credit-form">
+                                                                                    Credit
+                                                                                    Cards
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item-ach">
+                                                                                <a class="nav-link" href="newcard.html#new-form">ACH Accounts</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </nav>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-3 ml-4">
+                                                            <br><br>
+                                                            <div class="bg-color-grey pt-1">
+                                                                <span class="plus radius ml-3 mr-2 mt-1"><a href="#"></a></span>
+                                                                <!-- hard coded because there is no database -->
+                                                                Add new card
+                                                                <div class="default mb-2">
+                                                                    <span><bold><small><em class="ml-2">Default</em></small></bold></span> <br>
+                                                                    <img src="img/images.png" width="35px" height="32px" alt="not showing" class="ml-1 p-1">
+                                                                    <span class="ml-1">ending in 2204</span>
+                                                                    <span class="ml-5"><em>"main debit"</em></span>
+                                                                    <hr>
+                                                                </div>
+                                                                <img src="discover.png" width="35px" height="32px" alt="not showing" class="ml-1 p-1">
+                                                                <span class="ml-1">ending in 2997</span>
+                                                                <span class="ml-5"><em>"main debit"</em></span>
+                                                                <hr>
+                                                                <img src="ae.png" width="35px" height="32px" alt="not showing" class="ml-1 p-1">
+                                                                <span class="ml-1">ending in 1221</span>
+                                                                <span class="ml-5"><em>"main debit"</em></span>
+                                                                <hr>
+                                                                <img src="img/Mastercard.png" width="35px" height="32px" alt="not showing" class="ml-1 p-1">
+                                                                <span class="ml-1">ending in 9762</span>
+                                                                <span class="ml-5"><em>"main debit"</em></span>
+                                                                <hr>
+
+                                                                <img src="img/images.png" width="35px" height="32px" alt="not showing" class="ml-1 p-1">
+                                                                <span class="ml-1">ending in 5555</span>
+                                                                <span class="ml-5"><em>"main debit"</em></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col">
+                                                            <br> <br> <br>
+                                                            <form class="needs-validation" novalidate>
+                                                                <div class="form-group row">
+                                                                    <div class="col-6 mb-3">
+                                                                        <label for="validationCustom01">Credit Card Number</label>
+                                                                        <input type="text" class="form-control" id="validationCustom01"
+                                                                               placeholder="XXXXXXXXXXXX2224" required="" pattern="[0-9]{16}">
+                                                                        <div class="invalid-feedback">
+                                                                            Looks good!
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-6 mb-3">
+                                                                        <label for="validationCustom02">Billing Address</label>
+                                                                        <input type="text" class="form-control" id="validationCustom02"
+                                                                               placeholder="123 Sunshine Lane" required>
+                                                                        <div class="valid-feedback">
+                                                                            Looks good!
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <div class="col-6 mb-3">
+                                                                        <label for="validationCustom03">Name On Card</label>
+                                                                        <input type="text" class="form-control" id="validationCustom03"
+                                                                               placeholder="Ashley Johnson" required>
+                                                                        <div class="invalid-feedback">
+                                                                            Please provide a valid name.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <label for="validationCustom05">Zip Code/Postal Code</label>
+                                                                        <input type="text" class="form-control" id="validationCustom05" placeholder="098345"
+                                                                               required>
+                                                                        <div class="invalid-feedback">
+                                                                            Please provide a valid zip.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col mb-3">
+                                                                        <label for="validationCustom04">Card Nickname</label>
+                                                                        <input type="text" class="form-control" id="validationCustom04"
+                                                                               placeholder="Primary" required>
+                                                                        <div class="invalid-feedback">
+                                                                            Please provide a valid state.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <div class="col-5 mb-3">
+                                                                        <label for="validationCustom01" class="mb-2">Expiration Date</label> <br>
+                                                                        <input class="f-s" class="form-control mb-1" type="number" value="1" min="1" max="12">
+                                                                        <span>&nbsp         </span>
+                                                                        <input class="f-s" class="form-control" type="number" value="2021" min="2021" max="2034">
+                                                                    </div>
+                                                                    <div class="col mb-3 mt-3 ml-5">
+                                                                        <div class="form-check ml-3">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                                                                   required>
+                                                                            <label class="form-check-label" for="invalidCheck">
+                                                                                Make default payment method
+                                                                            </label>
+                                                                            <div class="invalid-feedback">
+                                                                                You must agree before submitting.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row ml-3">
+                                                                        <button type="button" class="btn btn-delete btn-outline-danger"
+                                                                                type="submit">
+                                                                            Delete
+                                                                        </button>
+                                                                        <button class="btn btn-save-changes btn-outline-primary" type="reset">
+                                                                            Save
+                                                                            Changes
+                                                                        </button>
+                                                                        <br> <br>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class="col text-center">
+                                                    <button type="button" class="btn btn-primary" type="submit">Done</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-style align-items-left">
+                            <img class="card-img-top mt-4" src="img/dashboardCardIcons/AutoPay.png" alt="amount due">
+                            <!--inside of the card well have the card body-->
+                            <div class="card-body">
+                                <h4 class="card-title">On</h4>
+                                <p>Autopay</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invoices Section-->
+
+            <div class="container-fluid invoices-styling p-4">
+                <div class="row">
+                    <div class="col">
+                        <p class=" mt-3 mb-5 pb-2">
+                            <img src="img/Step1.png" width="25px" height="25px" alt="1" class="mr-4">Select
+                            invoices to pay
+                        </p>
+                        <div class="invoices-inner-styling">
+                            <table class="table table-striped table-bordered" id="myTable">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="table-invoice">Invoice #</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Due Date</th>
+                                        <th scope="col">Invoice Total</th>
+                                        <th scope="col">Amount Due</th>
+                                        <th scope="col">Terms</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">PO#</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="data-row">
+                                        <th scope="row">
+                                            <input type="checkbox" rownum="1" class="checked mr-4" class="mr-4"><a href="#"
+                                                                                                                   style="font-weight:lighter">234239</a>
+                                        </th>
+                                        <td>Date1</td>
+                                        <td>Due Date1</td>
+                                        <td class="it">70.00</td>
+                                        <td class="ad">70.00</td>
+                                        <td>Discounted if paid by...</td>
+                                        <td>Lorem</td>
+                                        <td>239482</td>
+                                    </tr>
+                                    <tr class="data-row">
+                                        <th scope="row">
+                                            <input type="checkbox" rownum="2" class="checked mr-4"><a href="#"
+                                                                                                      style="font-weight:lighter">567567</a>
+                                        </th>
+                                        <td>Date2</td>
+                                        <td>Due Date2</td>
+                                        <td class="it">60.00</td>
+                                        <td class="ad">60.00</td>
+                                        <td>Discounted if paid by...</td>
+                                        <td>Lorem</td>
+                                        <td>239482</td>
+                                    </tr>
+                                    <tr class="data-row">
+                                        <th scope="row">
+                                            <input type="checkbox" rownum="3" class="checked mr-4"><a href="#"
+                                                                                                      style="font-weight:lighter">345454</a>
+                                        </th>
+                                        <td>Date3</td>
+                                        <td>Due Date3</td>
+                                        <td class="it">50.00</td>
+                                        <td class="ad">50.00</td>
+                                        <td>Discounted if paid by...</td>
+                                        <td>Lorem</td>
+                                        <td>239482</td>
+                                    </tr>
+                                    <tr class="data-row">
+                                        <th scope="row">
+                                            <input type="checkbox" rownum="4" class="checked mr-4"><a href="#" style="font-weight:lighter">345454
+                                        </th>
+                                        <td>Date4</td>
+                                        <td>Due Date4</td>
+                                        <td class="it">90.00</td>
+                                        <td class="ad">90.00</td>
+                                        <td>Discounted if paid by...</td>
+                                        <td>Lorem</td>
+                                        <td>239482</td>
+                                    </tr>
+                                    <tr class="data-row">
+                                        <th scope="row">
+                                            <input type="checkbox" rownum="5" class="checked mr-4"><a href="#" style="font-weight:lighter">345454
+                                        </th>
+                                        <td>Date5</td>
+                                        <td>Due Date5</td>
+                                        <td class="it">10.00</td>
+                                        <td class="ad">10.00</td>
+                                        <td>Discounted if paid by...</td>
+                                        <td>Lorem</td>
+                                        <td>239482</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mt-5 mb-3">
+                    <!-- <span class="invoices-selected-spacing" class="is">Invoices selected:</span> -->
+                    <span class="invoices-selected-spacing" id="numberOfItemsDisplay">Invoices selected: 0</span>
+                    <!-- <span class="tpa-invoices" id="ts">Total Payment Amount: </span> -->
+                    <span class="tpa-invoices" id="tpa">Total Payment Amount: $0.00</span>
+                </div>
+            </div>
+
+            <!-- Payment Section -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-7 payment-styling pl-3 pt-3">
+                        <p class=" mt-3 mb-4">
+                            <img src="img/Step2.png" width="25px" height="25px" alt="1" class="mr-4 mb-2">Select
+                            a payment method
+                        </p>
+                        <div class="tab-section-wrapper">
+                            <div class="tabs">
+                                <div tab-index="1" id="card-tab" class="tab tab-bank active mb-4 ml-5">
+                                    <!-- Add IDs to your buttons -->
+                                    <a id="btn-pay-with-card" class="tab--with-pointer-event btn-cursor">Pay by Credit Card</a>
+                                </div>
+                                <div tab-index="2" id="account-tab" class="tab tab-bank ">
+                                    <a id="btn-pay-with-account" class="tab--with-pointer-event btn-cursor">Pay with Bank Account</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pay with Credit card section  -->
+                        <div name="credit-form">
+                            <form id="credit-form" class="credit-form" action="index.html" method="post">
+                                <form>
+                                    <nav class="navbar navbar-payment-options navbar-expand-lg navbar-light">
+                                        <div class="container-fluid">
+                                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                                                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                            <div class="collapse navbar-collapse" id="navbarNav">
+                                                <ul class="navbar-nav">
+                                                    <li class="nav-item-s">
+                                                        <a id="btn-saved-card" class="nav-link active mr-5 btn-cursor" aria-current="page">Saved Card</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a id="btn-new-card" class="nav-link ml-5 btn-cursor">New Card</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <div id="saved-card">
+                                        <div class="form-row ml-5 mb-4">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlSelect1" class="mt-5 mb-1" required>Saved Card</label>
+
+                                                <br>
+                                                <select id="id_select2_example" style="width: 260px;">
+                                                    <option data-img_src="img/Mastercard.png">ending in 2039,"main card"</option>
+                                                    <option data-img_src="img/images.png">ending in 2022</option>
+                                                    <option data-img_src="img/images.png">ending in 2011</option>
+                                                </select>
+                                                <!-- I would put this in script.js -->
+                                                <script type="text/javascript">
+                          function custom_template(obj) {
+                            var data = $(obj.element).data();
+                            var text = $(obj.element).text();
+                            if (data && data['img_src']) {
+                              img_src = data['img_src'];
+                              template = $("<div><img src=\"" + img_src + "\" style=\"width:7px%;height:30px;\"/><p style=\"font-weight: 400;font-size:14pt;text-align:left;\">" + text + "</p></div>");
+                              return template;
+                            }
+                          }
+                          var options = {
+                            'templateSelection': custom_template,
+                            'templateResult': custom_template,
+                            'dropdownPosition': 'below'
+                          }
+                          $('#id_select2_example').select2(options);
+                          $('.select2-container--default .select2-selection--single').css({ 'height': '70px' });
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="form-row ml-5">
+                                            <div class="form-group">
+                                                <label for="Security Code">Security Code (CVV2/CVC)</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="new-card">
+                                        <div class="form-row ml-5 mb-4">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlSelect1" class="mt-5 mb-1">Credit Card Number</label>
+                                                <br>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                        </div>
+                                        <div class="form-row ml-5">
+                                            <div class="form-group">
+                                                <label for="Security Code">Security Code (CVV2/CVC)</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </form>
+                            <!-- Pay with Bank Account Section -->
+                            <div name="account-form" class="mr-5">
+                                <form id="account-form" class="account-form" action="index.html" method="post">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="Account Number">Account Number</label>
+                                                <input type="text" class="form-control" id="Account Number">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="Account Number">Routing Number</label>
+                                                <input type="text" class="form-control" id="Routing Numbers">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Pay Now</button>
+                                    </form>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Review Section-->
+
+                    <div class="col review-styling pl-4 pt-3 d-flex flex-column">
+                        <!-- <p class=" mt-3 mb-5"> <img src="img/Step3.png" width="25px" height="25px" alt="1" class="mr-2">Review payment summary</p> -->
+                        <div class="d-flex mt-3 mb-5">
+                            <img src="img/Step3.png" width="25px" height="25px" alt="1" class="mr-2">
+                            <span>Review payment summary</span>
+                        </div>
+                        <div class="d-flex justify-content-between mt-5 mb-4">
+                            <span># of invoices selected</span>
+                            <span id="numberOfItemsSelected">0</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <span>invoice payment amouunt</span>
+                            <span id="ipa">$0.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-5">
+                            <span>3 % card convenience fee</span>
+                            <span id="percentfee">$0.00</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-5 mb-5 pt-4 border-top border-dark">
+                            <span class="tpa">Total Payment Amount: </span>
+                            <span class="tpa" id="overalltotal">$0.00</span>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-block btn-color mt-1">Pay Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid cell-payment">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-lg btn-block btn-color">Make Payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bg color div ends here-->
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+                integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+                crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
